@@ -1,0 +1,33 @@
+{
+  "name": "midjourney-web",
+  "version": "0.0.1",
+  "license": "MIT",
+  "description": "A WebGUI for Midjourney",
+  "keywords": [
+    "midjourney",
+    "midjourney-webgui",
+    "midjourney-client"
+  ],
+  "homepage": "https://github.com/AprilNEA/Midjourney-Web",
+  "bugs": {
+    "url": "https://github.com/AprilNEA/Midjourney-Web/issues",
+    "email": "github@sku.moe"
+  },
+  "author":"AprilNEA <github@sku.moe> (https://sku.moe)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AprilNEA/Midjourney-Web"
+  },
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,mdx}\""
+  },
+  "devDependencies": {
+    "@turbo/gen": "^1.9.7",
+    "prettier": "^2.5.1",
+    "turbo": "latest"
+  },
+  "packageManager": "pnpm@7.15.0"
+}
