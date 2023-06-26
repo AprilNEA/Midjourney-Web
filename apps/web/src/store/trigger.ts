@@ -16,8 +16,9 @@ export type TriggerState = {
   globalId: 0;
 };
 export type TriggerActions = {
-  clearSessions: () => void;
+  updateSession: (index: number) => void;
   selectSession: (index: number) => void;
+  clearSessions: () => void;
 };
 export type TriggerStore = TriggerState & TriggerActions;
 
@@ -28,17 +29,19 @@ export const useTriggerStore = create<TriggerStore>()(
       currentSessionIndex: 0,
       globalId: 0,
 
-      clearSessions() {
-        set(() => ({
-          sessions: [],
-          currentSessionIndex: 0,
-        }));
-      },
+      updateSession(index: number) {},
 
       selectSession(index: number) {
         set({
           currentSessionIndex: index,
         });
+      },
+
+      clearSessions() {
+        set(() => ({
+          sessions: [],
+          currentSessionIndex: 0,
+        }));
       },
     }),
     {

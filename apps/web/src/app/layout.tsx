@@ -27,16 +27,14 @@ export default function RootLayout({
         >
           <div
             className={clsx(
-              "bg-white p-2.5",
-              "min-h-[30rem] min-w-[37.5rem] max-w-[75rem]",
+              "h-[600px] w-[800px] bg-white",
+              "min-h-[480px] min-w-[600px] max-w-[1200px]",
               "rounded-3xl border-slate-200",
               "flex flex-row"
             )}
           >
-            <div className={clsx("top-0 box-border h-full w-64 bg-second p-5")}>
-              <Sidebar />
-            </div>
-            <div>{children}</div>
+            <Sidebar />
+            {children}
           </div>
         </div>
       </body>

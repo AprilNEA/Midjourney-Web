@@ -26,7 +26,9 @@ export function Button(props: ButtonProps) {
   return (
     <button
       {...props}
-      className={clsx(props.className, "rounded-md bg-second p-2.5 text-white")}
-    ></button>
+      className={clsx(props.className, "rounded-md bg-second text-black")}
+    >
+      {props.children}
+    </button>
   );
 }
